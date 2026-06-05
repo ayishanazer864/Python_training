@@ -1,0 +1,11 @@
+l=[1,2,3,4,6]
+n=len(l)
+start=0
+end=(n-1)//2
+while(start<end):
+    temp=l[start]
+    l[start]=l[end]
+    l[end]=temp
+    start+=1
+    end-=1
+print(l)

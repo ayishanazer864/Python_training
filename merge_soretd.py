@@ -1,0 +1,19 @@
+l1=[1,2,5,7]
+l2=[3,6,9]
+l3=[]
+p1=0
+p2=0
+while(p1!=len(l1) and p2!=len(l2)):
+    if(l1[p1]<l2[p2]):
+        l3.append(l1[p1])
+        p1=p1+1
+    else:
+        l3.append(l2[p2])
+        p2=p2+1
+while(p1!=len(l1)):
+    l3.append(l1[p1])
+    p1=p1+1
+while(p2!=len(l2)):
+    l3.append(l2[p2])
+    p2=p2+1
+print(l3)
